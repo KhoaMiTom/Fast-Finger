@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tốc độ gõ tiếng Việt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tốc độ gõ tiếng Việt</h1>
+        <div class="info-bar">
+            <div class="timer">
+                Thời gian còn lại: <span id="timer">60</span>s
+            </div>
+            <button id="start-btn">Bắt đầu</button>
+        </div>
+        <div id="text-display" class="text-content"></div>
+        <textarea id="input-area" rows="5" placeholder="Bắt đầu gõ ở đây..."></textarea>
+        <div id="results" class="hidden">
+            <h2>Kết quả của bạn</h2>
+            <div class="results-grid">
+                <div class="result-item">
+                    <div class="result-value"><span id="wpm">0</span></div>
+                    <div class="result-label">WPM (từ mỗi phút)</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-value"><span id="accuracy">0</span>%</div>
+                    <div class="result-label">Độ chính xác</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-value"><span id="correct-words">0</span></div>
+                    <div class="result-label">Từ đúng</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-value"><span id="incorrect-words">0</span></div>
+                    <div class="result-label">Từ sai</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
